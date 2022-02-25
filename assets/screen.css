@@ -9,6 +9,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 
 
-#main{
-  background-color: black
+html{
+  background-color: gray
+}
+button{
+  color: blue
 }
