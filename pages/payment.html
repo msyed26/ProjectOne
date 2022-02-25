@@ -7,7 +7,9 @@
   </head>
   <body>
 
-    <h1>Payment</h1>
+    <section id = "main-page-text">
+      <h1>Payment Method</h1>
+    </section>
     <form class="Payment" action="Confirmation.html" method="post">
       <fieldset name="Card-info">
 
@@ -24,14 +26,14 @@
       <fieldset name="Billing-info">
         <ol>
           <li><input type="radio" class= "checkbox" name="Same-as-shipping" id="same"/> Same as shipping</li>
-          <li><input type="text" name="address" value=""> Street Address</li>
-          <li><input type="text" name="City" value=""> City</li>
-          <li><input type="text" name="State" value=""> State</li>
-          <li><input type="text" name="Zip-code" value=""> Postal Code</li>
+          <li><input type="text" name="address" value="" id = "addy-1"> Street Address</li>
+          <li><input type="text" name="City" value="" id = "city-1"> City </li>
+          <li><input type="text" name="State" value="" id = "state-1"> State</li>
+          <li><input type="text" name="Zip-code" value="" id = "zip-1"> Postal Code</li>
           <button type="button" name="button"><a href="./cart.html">Back to Cart</a>
           <button type="button" name="button"><a href="./confirmation.html">Confirm Order!</a></button>
         </ol>
       </fieldset>
-
   </body>
+  <script src="/assests/main.js"></script>
 </html>
