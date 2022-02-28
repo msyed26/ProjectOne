@@ -13,7 +13,5 @@ button.onclick = function () {
 //button function for same adress as shipping
 button1.onclick = function () {
   document.getElementById("state-2").value = state.value;
-  alert("button clicked");
-
-
+  alert("button clicked")
 }
