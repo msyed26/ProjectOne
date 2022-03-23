@@ -18,8 +18,9 @@
       <li><input type="text" name="CVV" value=""></li> CVV
       </ol>
     </fieldset>
-      <button type="button" name= "button" name="Same-as-shipping" id = "same"/></button>
-      <fieldset name="Billing-info">
+      <input type="checkbox" name="same" id = "same" value = "yes" onclick="showOrHideBillInfo()">
+      <label for="same">Billing adress dfferent than shipping?</label>
+      <fieldset name="Billing-info" id="bil"> 
         <ol>
           <li><input type="text" name="address" value="" id = "addy-1"> Street Address</li>
           <li><input type="text" name="City" value="" id = "city-1"> City </li>
@@ -30,6 +31,7 @@
       </fieldset>
       <input type="submit" value="Confirm order" id="confrm">
     </form>
-    <script src="../assets/main.js"></script>
   </body>
+  <script src="../assets/main.js"></script>
+
   </html>
