@@ -10,7 +10,7 @@
     <section id = "main-page-text">
       <h1>Payment Method</h1>
     </section>
-    <form class="Payment" action="Confirmation.html" method="post">
+    <form action="./confirmation.html" id="billing-form" aria-labelledby="label-billing">
       <fieldset name="Card-info">
       <ol>
       <li><input type="text" name="Credit card num" value=""></li> Credit Card Number
@@ -26,9 +26,10 @@
           <li><input type="text" name="State" value="" id = "state-1"> State</li>
           <li><input type="text" name="Zip-code" value="" id = "zip-1"> Postal Code</li>
           <button type="button" name="button"><a href="./cart.html">Back to Cart</a>
-          <button type="button" name="button"><a href="./confirmation.html">Confirm Order!</a></button>
         </ol>
       </fieldset>
+      <input type="submit" value="Confirm order" id="confrm">
+    </form>
+    <script src="../assets/main.js"></script>
   </body>
-  <script src="../assets/main.js"></script>
-</html>
+  </html>
