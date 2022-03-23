@@ -9,25 +9,27 @@
       <section id = "main-page-text">
         <h1>Select Shipipping Speed</h1>
       </section>
-
-  <form class="Shipping-speed" action="payment.html" method="post">
+  
+  <form method="post" action="./payment.html" id="shipping-form" aria-labelledby="label-shipping">
+    <!-- <form class="Shipping-speed" action="payment.html" method="post"> -->
       <fieldset name="Shipping">
         <ul>
-          <li><input type="radio" class= "checkbox" name="Speed" value="3day" id = "3-Day"/> 3 Day Shipping Free </li>
-          <li><input type="radio" class= "checkbox" name="Speed" value="2day" id = "2-Day"/> 2 Day Shipping $25 </li>
-          <li><input type="radio" class= "checkbox" name="Speed" value="1day" id = "1-Day"/> 1 Day Shipping $50 </li>
+          <li><input type="radio" class= "checkbox" name="Speed" value="3day" id = "3-Day" required = "yes"/> 3 Day Shipping Free </li>
+          <li><input type="radio" class= "checkbox" name="Speed" value="2day" id = "2-Day" required = "yes"/> 2 Day Shipping $25 </li>
+          <li><input type="radio" class= "checkbox" name="Speed" value="1day" id = "1-Day" required = "yes"/> 1 Day Shipping $50 </li>
         </ul>
       </fieldset>
       <fieldset name="shipping-info">
         <ol>
-          <li><input type="text" name="address" value="" id = "addy"> Street Address</li>
-          <li><input type="text" name="City" value=" " id = "city" > City"           </li>
-          <li><input type="text" name="State" value=" " id = "state"> State"           </li>
-          <li><input type="text" name="zip-code" value="" id="zip"> Postal Code  </li>
+          <li><input type="text" name="address" value="" id = "addy" required = "yes"> Street Address </li>
+          <li><input type="text" name="City" value=" " id = "city" required= "yes">  City"           </li>
+          <li><input type="text" name="State" value=" " id = "state" required= "yes"> State"        </li>
+          <li><input type="text" name="zip-code" value="" id="zip" required= "yes"> Postal Code        </li>
           <button type="button" name="button"><a href="./cart.html">Back to Cart</a>
-          <button type="button" name="button" id = "pay"><a href="./payment.html" >Continue to Payment</a></button>
+          <!-- <button type="button" name="button" id = "pay"><a href="./payment.html" >Continue to Payment</a></button> -->
         </ol>
       </fieldset>
+      <input type="submit" id="submit" value="Continue to Billing" id="pay">
   </form>
       <script src="../assets/main.js"></script>
   </body>
