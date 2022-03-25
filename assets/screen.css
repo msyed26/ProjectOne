@@ -10,7 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 html{
-  background-color: gray;
+  background-color: rgb(83, 116, 122);
   font-family: "verdana", helvetica , arial, sans-serif;
   text-align: center;
   text-decoration: none;
@@ -18,18 +18,25 @@ html{
   padding-top: 10vw;
 
 }
-/* #main{
-  padding: 33vw;
-} */
 #hom{
   font-family: sans-serif;
   font-weight: 100;
 }
+#main {
+  margin-top: 5vw;
+}
 #main-page-text{
 vertical-align: text-top;
 font-weight: bold;
+padding-top: 5vw;
+padding-bottom: 10vw;
 }
-#sub-section{
+#sub-section, a {
+  margin-top: 15vw;
   text-align: left;
   text-align: center;
+  text-decoration: none;
+}
+#continue{
+  padding-top: 5vw;
 }

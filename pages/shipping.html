@@ -11,26 +11,31 @@
       </section>
   
   <form action="./payment.html" id="shipping-form" aria-labelledby="label-shipping">
-      <fieldset name="Shipping">
+      <fieldset name="Shipping" id="ship">
         <ul>
           <li><input type="radio" class= "checkbox" name="Speed" value="3day" id = "3-Day" required = "yes"/> 3 Day Shipping Free </li>
           <li><input type="radio" class= "checkbox" name="Speed" value="2day" id = "2-Day" required = "yes"/> 2 Day Shipping $25 </li>
           <li><input type="radio" class= "checkbox" name="Speed" value="1day" id = "1-Day" required = "yes"/> 1 Day Shipping $50 </li>
+          <br>
         </ul>
       </fieldset>
-      <fieldset name="shipping-info">
+      <fieldset name="shipping-info" >
         <ol>
-          
-          <li><input type="text" name="address" value="" id = "addy" required = "yes"> Street Address </li>
-          <li><input type="text" name="City" value=" " id = "city" required= "yes">  City"           </li>
-          <li><input type="text" name="State" value=" " id = "state" required= "yes"> State"        </li>
-          <li><input type="text" name="zip-code" value="" id="zip" required= "yes"> Postal Code        </li>
+          <li><input type="text" name="address" value="" id = "addy" required = "yes" ></li>
+          <label for="Address">Street Address </label>
+          <li><input type="text" name="City" value=" " id = "city" required= "yes" ></li>
+          <label for="City">City </label>
+          <li><input type="text" name="State" value=" " id = "state" required= "yes" ></li>
+          <label for="State">State </label>
+          <li><input type="text" name="zip-code" value="" id="zip" required= "yes" ></li>
+          <label for="Zip-code">Zip-Code </label></li>
+          <br>
+          <br>
           <button type="button" name="button"><a href="./cart.html">Back to Cart</a>
         </ol>
       </fieldset>
       <input type="submit" value="Continue to Billing" id="pay">
   </form>
-      <script src="../assets/main.js"></script>
   </body>
-
+  <script src="../assets/main.js"></script>
 </html>
